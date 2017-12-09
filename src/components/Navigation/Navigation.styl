@@ -1,0 +1,19 @@
+.Navigation
+    padding 20px
+
+    &__link
+        display block
+        margin 10px
+
+        &_current
+            position relative
+            color #222
+            pointer-events none
+            text-decoration none
+
+            &::before
+                content '>'
+                position absolute
+                left -1em
+                top -1px
+
