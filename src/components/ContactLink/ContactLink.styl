@@ -1,0 +1,29 @@
+.ContactLink
+    display flex
+    align-items center
+
+    &__icon
+        margin-right 3px
+
+    &:hover &__icon
+        animation shake .1s ease-out
+        animation-iteration-count 3
+
+    &__link
+        text-decoration none
+        color #5199d3
+
+@keyframes shake {
+    0% {
+        transform rotateZ(0)
+    }
+    25% {
+        transform rotateZ(20deg)
+    }
+    75% {
+        transform rotateZ(-20deg)
+    }
+    100% {
+        transform rotateZ(0)
+    }
+}

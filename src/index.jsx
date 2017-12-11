@@ -5,6 +5,7 @@ import {
     ConnectedRouter,
     routerReducer,
     routerMiddleware } from 'react-router-redux'
+import { BrowserRouter } from 'react-router-dom'
 import {
     createStore,
     combineReducers,
@@ -31,5 +32,5 @@ render(
             <App/>
         </ConnectedRouter>
     </Provider>,
-    document.getElementById('app-root'),
+    document.getElementById('app-root')
 )

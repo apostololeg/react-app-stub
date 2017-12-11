@@ -20,7 +20,8 @@ export const request = (input, init = defaultRequestOpts) => {
 
     return new vow.Promise((resolve, reject) => {
         fetch(input, init)
-            .then(res => resolve(res))
+            .then(res => res.json())
+            .then(json => resolve(json))
             .catch(err => {
                 console.log('REQUEST ERROR CATCHED', input, init, err)
                 reject(err)

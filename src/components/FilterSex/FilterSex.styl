@@ -1,0 +1,15 @@
+.FilterSex
+    display flex
+
+    &__item
+        cursor pointer
+        color rgba(0,0,0,.54)
+
+        &_active
+            color initial
+            pointer-events none
+
+        &:not(:first-child)::before
+            margin 0 5px
+            content '/'
+            color rgba(0,0,0,.54)
