@@ -66,16 +66,18 @@ class People extends Component {
             name,
             worksFor } = data
 
-        return <div className='People'>
-            <Link className='People__close' to='/'>
-                <IconButton><IconClose/></IconButton>
-            </Link>
-            <div className='People__avatar'>
-                <IconUser color='disabled' style={{ height: 130, width: 130 }} />
+        return <div className='People transition-item'>
+            <div className='People__inner'>
+                <Link className='People__close' to='/'>
+                    <IconButton><IconClose/></IconButton>
+                </Link>
+                <div className='People__avatar'>
+                    <IconUser color='disabled' style={{ height: 130, width: 130 }} />
+                </div>
+                <div className='People__title'>{name}</div>
+                <div className='People__subtitle'>{worksFor}</div>
+                {this._renderTable(data)}
             </div>
-            <div className='People__title'>{name}</div>
-            <div className='People__subtitle'>{worksFor}</div>
-            {this._renderTable(data)}
         </div>
     }
 }

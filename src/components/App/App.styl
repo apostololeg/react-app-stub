@@ -12,3 +12,27 @@ button
     max-width 600px
     padding 20px
     margin 20px auto
+
+.transition-appear-active
+.transition-leave-active
+    transition .1s ease-out
+    transition-property transform, opacity
+
+.transition-appear
+    opacity 0
+    transform scale(.98)
+    transition-delay .1s
+.transition-appear-active
+    opacity 1
+    transform scale(1)
+
+.transition-leave
+    position absolute !important
+    top 0
+    opacity 1
+    transform scale(1)
+    pointer-events none
+.transition-leave-active
+    opacity 0
+    transform scale(.98)
+

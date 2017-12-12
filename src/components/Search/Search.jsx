@@ -106,7 +106,7 @@ class Search extends Component {
             worksFor } = this.props.filter
         const filteredData = this._getFilteredData()
 
-        return <div className='Search'>
+        return <div className='Search transition-item'>
             <div className='Search__filter'>
                 <TextField id='search'
                     label='search friends'

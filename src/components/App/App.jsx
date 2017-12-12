@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { BrowserRouter as Router, Route, withRouter } from 'react-router'
+import { BrowserRouter as Router, Route, withRouter, Switch } from 'react-router'
+import PageTransition from 'react-router-page-transition'
 
 import { request } from '../../utils'
 import { setPeoples } from '../../actions'
@@ -20,10 +21,16 @@ class App extends Component {
     }
 
     render() {
+        const { location } = this.props
+
         return (
             <div className='App'>
-                <Route exact path='/' component={Search} />
-                <Route path='/people/:id' component={People} />
+                <PageTransition timeout={200}>
+                    <Switch location={location}>
+                        <Route exact path='/' component={Search} />
+                        <Route path='/people/:id' component={People} />
+                    </Switch>
+                </PageTransition>
             </div>
         )
     }
