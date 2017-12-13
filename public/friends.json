@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Alexandr Ivanov",
+        "sex": "male",
+        "birth": "04.11.1989",
+        "worksFor": "Zenimax",
+        "phone": "+79854342282",
+        "email": "alexandrivanov@gmail.com"
+    },
+    {
+        "id": "2",
+        "name": "Olga Alexeeva",
+        "sex": "female",
+        "birth": "02.01.1993",
+        "worksFor": "Captel",
+        "phone": "+79852323482",
+        "email": "olgaalexeeva@gmail.com"
+    },
+    {
+        "id": "3",
+        "name": "Fedor Karasev",
+        "sex": "male",
+        "birth": "12.12.1986",
+        "worksFor": "Zenimax",
+        "phone": "+79854424282",
+        "email": "fedorkarasev@gmail.com"
+    },
+    {
+        "id": "4",
+        "name": "Dmitry Ivanov",
+        "sex": "male",
+        "birth": "05.06.1989",
+        "worksFor": "Captel",
+        "phone": "+79854338736",
+        "email": "dmitryivanov@gmail.com"
+    },
+    {
+        "id": "5",
+        "name": "Anna Stepanova",
+        "sex": "female",
+        "birth": "06.16.1993",
+        "worksFor": "Zenimax",
+        "phone": "+79877772309",
+        "email": "ann_step@gmail.com"
+    },
+    {
+        "id": "6",
+        "name": "Alexandr Korolev",
+        "sex": "male",
+        "birth": "04.11.1989",
+        "worksFor": "Zenimax",
+        "phone": "+79854355523",
+        "email": "alex_korol@gmail.com"
+    }
+]
